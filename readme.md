@@ -77,7 +77,6 @@ Foram utilizados **sete modelos distintos**, todos executados sob as mesmas cond
 | meta-llama/Llama-3.2-3B-Instruct | Avaliação de modelos compactos |
 | HuggingFaceH4/zephyr-7b-beta | Clareza e alinhamento instrucional |
 | deepseek-ai/deepseek-coder-6.7b-instruct | Especializado em código e engenharia de software |
-| microsoft/Phi-3.5-mini-instruct | Modelo leve e otimizado |
 | Qwen/Qwen2.5-7B-Instruct | Uso explícito de métricas quantitativas |
 
 ---
