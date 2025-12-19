@@ -27,15 +27,6 @@ A análise é baseada exclusivamente em **dados técnicos reais** extraídos do 
 - Vídeo tutorial:  
   https://www.youtube.com/watch?v=YYo4CtIqv24
 ---
-## 📂 Estrutura do Repositório
----
-
-- `codigo/`: Notebook Google Colab contendo todo o código de extração, processamento e análise.
-- `documento/`: Relatório final da atividade em formato PDF.
-- `README.md`: Documento descritivo do projeto (este arquivo).
-
----
-
 ## 🧪 Metodologia
 
 A metodologia adotada é composta pelas seguintes etapas:
