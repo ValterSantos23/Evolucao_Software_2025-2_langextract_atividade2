@@ -106,8 +106,6 @@ Todos os modelos identificaram:
 | Qwen-2.5-7B | GitHub Flow | Continuous Delivery | Uso explícito de métricas |
 | Hermes-2-Pro | GitHub Flow | Continuous Delivery | Análise detalhada |
 | DeepSeek-Coder | GitHub Flow | Continuous Delivery | Foco estrutural |
-| Phi-3.5-mini | GitHub Flow | Continuous Delivery | Bom custo-benefício |
-
 ---
 
 ## 🎯 Conclusão
