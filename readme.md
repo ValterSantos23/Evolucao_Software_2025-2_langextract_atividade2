@@ -1,9 +1,19 @@
 # Análise de Governança de Software com Modelos de Linguagem  
 ## Estudo de Caso: Projeto LangExtract
 
-Este repositório contém os artefatos, códigos e documentação referentes à **Atividade 2 – Gerência de Configuração**, da disciplina **Engenharia de Software II**, da **Universidade Federal de Sergipe (UFS)**.
+Este repositório contém os artefatos e códigos desenvolvidos para a **Atividade 2 – Gerência de Configuração**, da disciplina **Engenharia de Software II**, com foco na análise de governança em projetos open source utilizando modelos de linguagem de grande porte (LLMs).
 
-O trabalho propõe uma abordagem técnica para análise de **governança em projetos de software open source**, utilizando **modelos de linguagem de grande porte (LLMs)** como ferramentas de apoio à interpretação de dados reais extraídos de um repositório Git.
+---
+
+## 🎯 Objetivo
+
+Analisar a governança do projeto open source **LangExtract** (Google), identificando:
+
+- O **modelo de fluxo de trabalho** (branching model)
+- A **estratégia de releases**
+- A **convergência de resultados** entre diferentes modelos de linguagem
+
+A análise é baseada exclusivamente em **dados técnicos reais** extraídos do repositório Git do projeto.
 
 ---
 ## 🔗 Links Importantes
@@ -17,22 +27,8 @@ O trabalho propõe uma abordagem técnica para análise de **governança em proj
 - Vídeo tutorial:  
   https://www.youtube.com/watch?v=YYo4CtIqv24
 ---
-
-
-## 📌 Objetivo do Trabalho
-
-Analisar a governança do projeto open source **LangExtract** (Google), com foco em:
-
-- Identificação do **modelo de fluxo de trabalho** (branching model)
-- Identificação da **estratégia de releases**
-- Comparação dos resultados obtidos por **diferentes modelos de linguagem**
-
-A análise é baseada **exclusivamente em dados técnicos reais**, extraídos do histórico Git do projeto, como branches, merges, tags e métricas temporais entre releases.
-
----
-
 ## 📂 Estrutura do Repositório
-
+---
 
 - `codigo/`: Notebook Google Colab contendo todo o código de extração, processamento e análise.
 - `documento/`: Relatório final da atividade em formato PDF.
@@ -136,7 +132,53 @@ A forte convergência dos resultados reforça a **consistência metodológica** 
 
 ---
 
+## ⚙️ Configuração de Hardware Utilizada
+
+Os experimentos foram executados no ambiente **Google Colab**, utilizando a infraestrutura padrão disponibilizada gratuitamente pela plataforma.
+
+### Hardware
+
+- **GPU:** NVIDIA Tesla T4  
+- **Memória da GPU:** 16 GB  
+- **Memória RAM:** aproximadamente 12 GB  
+- **Processador:** Intel Xeon (arquitetura x86_64, virtualizado)  
+- **Armazenamento:** Ambiente temporário do Google Colab  
+
+### Justificativa da Configuração
+
+A GPU NVIDIA Tesla T4 foi utilizada por oferecer suporte adequado à execução de modelos de linguagem de médio porte (entre 3B e 7B parâmetros), permitindo inferência eficiente em precisão reduzida (`float16`) sem comprometer a qualidade das respostas.
 
 ---
 
+## 🧰 Dependências de Software
+
+- Python 3.10+
+- Bibliotecas principais:
+  - `torch`
+  - `transformers`
+  - `accelerate`
+  - `git`
+
+---
+
+## ▶️ Como Executar o Código
+
+### Passo 1 — Abrir o ambiente
+
+1. Acesse o **Google Colab**:  
+   https://colab.research.google.com
+2. Faça upload do notebook localizado em `codigo/analise_langextract.ipynb`
+3. Ative a GPU:
+   - Menu **Ambiente de execução**
+   - **Alterar tipo de ambiente de execução**
+   - Selecione **GPU**
+
+---
+
+### Passo 2 — Instalar dependências
+
+Execute a célula inicial do notebook:
+
+```bash
+!pip install -q -U transformers accelerate torch
 
